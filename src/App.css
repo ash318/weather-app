@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.weatherAppHeader{
+  background-color: #282c34;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.weatherAppLogo,
+.searchForm {
+  height: 50px;
+}
+
+.weatherAppLogo {
+    width: 25%;
+    float: left;
+    font-size: 4vh;
+    font-weight: 500;
+}
+
+.searchForm {
+   width: 60%; 
+   float: right; 
+}
+
+.searchForm input {
+  width: 60%;
+  height: 4vh;
+  font-size: 2vh;
+  padding: 0 0 0 15px;
+}
+
+.searchForm button {
+  margin: 0 0 0 1vh;
+  width: 15%;
+  height: 5vh;
+  font-size: 2vh;
+  border-radius: 1vh;
+  background-color: #3c8ed2;
+  color: white;
+}
+
+.cityTitle {
+  margin-left: 5%;
+  text-align: left;
+}
+
+.weatherGrid {
+  display: grid;
+  width: 90%;
+  height: 60px;
+  margin: auto;
+  grid-template-columns: 1fr 1.1fr 1.3fr 0.8fr 0.8fr 1fr; 
+}
+
+.gridItem {
+  text-align: left;
+  padding: 15px 0 0 5px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.gridItem:nth-child(1) {
+  padding: 17px 0 0 5px;
+  border-left: 1px solid #ddd;
+}
+
+.gridItem span.weatherDay {
+  vertical-align:top;
+}
+
+.gridItem span.weatherIcon img {
+  margin: -8px 0 0 25px;
+} 
+
+.weatherGrid:nth-child(odd) {
+  background-color: #fff;
+}
+
+.weatherGrid:nth-child(even) {
+  background-color: #eee;
+}
+
+.gridHeader .gridItem {
+  font-size: 300;
+  font-weight: 600;
+  padding: 5px 0 0 5px;
+  background-color: #3c8ed2;
+  color: white;
+}
+
+.gridItem:last-child {
+  border: none;
+  background-color: white;
+}
+
+.cityError {
+  margin-top: 10vh;
+  font-size: 5vh;
+}
